@@ -1,4 +1,1 @@
-
-*.pyc
-/portfolio_website/homepage/__pycache__
-/portfolio_website/portfolio_website/__pycache__
+__pycache__/
