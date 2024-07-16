@@ -4,14 +4,10 @@ from django.shortcuts import render, HttpResponse
 def home(request):
     return render(request, 'homepage_new.html')
 
-def projects(request):
-    return render(request, 'projects.html')
-
-def contact_me(request):
+def thank_you(request):
     if request.method == "POST":
         name = request.POST.get("name")
         email = request.POST.get("email")
-        phone = request.POST.get("phone")
-        description = request.POST.get("description")
-        # print(f"Hi! {name}, thank you for contacting me!")
-    return render(request, 'contactme.html')
+        message = request.POST.get("message")
+        print(f"Hi! {name}, thank you for contacting me!")
+    return render(request, 'thank_you.html')
