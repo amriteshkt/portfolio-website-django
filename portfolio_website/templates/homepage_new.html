@@ -12,9 +12,7 @@
   <style>
     .dark-bg {
       background-color: #2f3136;
-      /* Discord's dark background color */
       color: #dcddde;
-      /* Light text color */
     }
     .custom-icon {
       width: 24px; /* Adjust width to match Font Awesome icons */
@@ -122,7 +120,7 @@
     <!-- Contact Section -->
 <section id="contact" class="container mx-auto my-12 p-6 dark-bg shadow-md text-center">
   <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
-  <p class="mb-6">If you would like to get in touch, please fill out the form below or reach out via email or LinkedIn.</p>
+  <p class="mb-6">If you would like to get in touch, please fill out the form below.</p>
   <form id="contact-form" method="post" action="{% url 'thanks' %}" class="max-w-lg mx-auto">
     {% csrf_token %}
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
